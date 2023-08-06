@@ -11,9 +11,17 @@ setInterval(() => {
   radius.value = Math.ceil(Math.random() * 10) + 3
 }, 2000)
 
-const area = computed((): string => {
+const area = computed((): number => {
   return radius.value * radius.value * PI.value
 })
+
+interface User {
+  firstName: string
+  lastName: string
+  age: number
+  sex: string
+  name?: string
+}
 
 const personInit = {
   firstName: '斉藤',
@@ -22,7 +30,8 @@ const personInit = {
   sex: '女'
 }
 
-const person = reactive(personInit)
+const person: User = reactive(personInit)
+
 person.name = person.firstName + person.lastName
 </script>
 <template>
