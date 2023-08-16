@@ -10,4 +10,5 @@ const name2 = ref('佐々木希')
   <!--マスタッシュ構文-->
   <p>{{ name1 }}</p>
   <p>{{ name2 }}</p>
+  <p>こんにちは</p>
 </template>
