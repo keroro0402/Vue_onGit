@@ -21,7 +21,7 @@ const onclick = (): void => {
 }
 </script>
 <template>
-  <p>テスト</p>
+  <p>テストsasasa</p>
   <p v-if="number >= 50">条件に合致したので表示①</p>
   <p v-if="Math.round(Math.random() * 100) >= 50">条件に合致したので表示②</p>
   <p v-if="showOrNot">条件に合致したので表示③</p>
